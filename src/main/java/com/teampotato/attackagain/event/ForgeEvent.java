@@ -35,8 +35,8 @@ public final class ForgeEvent {
         if (event.getSource().getEntity() instanceof ServerPlayer player && monster.isAlive()) {
             Random random = new Random();
             if (random.nextInt(100) + 1 <= player.getAttribute(AttackAttribute.ATTACK_PROBABILITY.get()).getValue()) {
-                float damage = Math.round(player.getAttribute(AttackAttribute.ATTACK_DAMAGE.get()).getValue());
-                float frequency = Math.round(player.getAttribute(AttackAttribute.ATTACK_FREQUENCY.get()).getValue());
+                float damage = (float) player.getAttribute(AttackAttribute.ATTACK_DAMAGE.get()).getValue();
+                float frequency = (float) player.getAttribute(AttackAttribute.ATTACK_FREQUENCY.get()).getValue();
                 float hurt = event.getAmount();
                 event.setAmount(hurt + frequency * (hurt * damage));
             }
