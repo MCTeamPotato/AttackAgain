@@ -11,13 +11,13 @@ public class AttackConfig {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
         builder.push("Potion Level Fix").comment("These settings will only apply when you first enter the world. Subsequently, you can control the attributes in-game.");
         PROBABILITY = builder
-                .comment("The larger this number, the higher the probability of a subsequent attack. Range:0~100, default: 30")
+                .comment("The larger this number, the higher the probability of a subsequent attack. Range:0~100, default: 15.0")
                 .define("Attack Again Probability", 15.0);
         DAMAGE = builder
-                .comment("The damage percentage of a subsequent attack, default: 1")
+                .comment("The damage percentage of a subsequent attack, default: 0.35")
                 .define("Damage Percentage", 0.35);
         FREQUENCY = builder
-                .comment("The frequency of subsequent attacks")
+                .comment("The frequency of subsequent attacks, default: 1.0")
                 .define("Damage Frequency", 1.0);
         builder.pop();
         CONFIG = builder.build();
