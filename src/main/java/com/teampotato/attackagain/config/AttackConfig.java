@@ -15,10 +15,10 @@ public class AttackConfig {
                 .define("Attack Again Probability", 15.0);
         DAMAGE = builder
                 .comment("The damage percentage of a subsequent attack, default: 0.35")
-                .define("Damage Percentage", 0.35);
+                .define("Attack Again Percentage", 0.35);
         FREQUENCY = builder
                 .comment("The frequency of subsequent attacks, default: 1.0")
-                .define("Damage Frequency", 1.0);
+                .define("Attack Again Frequency", 1.0);
         builder.pop();
         CONFIG = builder.build();
     }

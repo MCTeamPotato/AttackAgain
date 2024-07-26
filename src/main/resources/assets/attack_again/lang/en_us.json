@@ -1,0 +1,5 @@
+{
+  "attribute.name.attack_again.attack_probability": "Attack Again Probability",
+  "attribute.name.attack_again.attack_damage": "Attack Again Percentage",
+  "attribute.name.attack_again.attack_frequency": "Attack Again Frequency"
+}
