@@ -11,11 +11,11 @@ public class AttackAttribute {
     public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(ForgeRegistries.ATTRIBUTES, AttackAgain.MODID);
 
     public static final RegistryObject<Attribute> ATTACK_PROBABILITY = ATTRIBUTES.register("attack_probability",
-            () -> new RangedAttribute("attribute.name.attack_again.attack_probability", 1, 0, 100).setSyncable(true));
+            () -> new RangedAttribute("attribute.name.attack_again.attack_probability", 15.0, 0, 100).setSyncable(true));
 
     public static final RegistryObject<Attribute> ATTACK_DAMAGE = ATTRIBUTES.register("attack_damage",
-            () -> new RangedAttribute("attribute.name.attack_again.attack_damage", 1, 0, Integer.MAX_VALUE).setSyncable(true));
+            () -> new RangedAttribute("attribute.name.attack_again.attack_damage", 0.35, 0, Integer.MAX_VALUE).setSyncable(true));
 
     public static final RegistryObject<Attribute> ATTACK_FREQUENCY = ATTRIBUTES.register("attack_frequency",
-            () -> new RangedAttribute("attribute.name.attack_again.attack_frequency", 1, 0, Integer.MAX_VALUE).setSyncable(true));
+            () -> new RangedAttribute("attribute.name.attack_again.attack_frequency", 1.0, 0, Integer.MAX_VALUE).setSyncable(true));
 }
